@@ -1,0 +1,20 @@
+{
+  "name": "queueflow",
+  "version": "1.0.0",
+  "description": "Distributed background task processing system — JS port of WorkQueue (Go)",
+  "main": "src/cmd/producer/main.js",
+  "scripts": {
+    "producer": "node src/cmd/producer/main.js",
+    "worker": "node src/cmd/worker/main.js",
+    "dev:producer": "nodemon src/cmd/producer/main.js",
+    "dev:worker": "nodemon src/cmd/worker/main.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
